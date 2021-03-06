@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  h1{
+      margin: 30px;
+  }
+  
+  .app {
+    width: 90%;
+    max-width: 600px;
+   
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  
+  .radio {
+    display: none;
+  }
+  .radio ~ span {
+    font-size: 3rem;
+    filter: grayscale(100);
+    cursor: pointer;
+    transition: 1;
+        
+  }
+  
+  .radio:hover ~ span {
+    filter: grayscale(0);
+    font-size: 4rem;
+    transition-delay: 150ms;
+    -ms-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+    -o-transition-delay: 150ms;
+    margin-top: -20px;
+}
+
+.radio:checked ~ span {
+  filter: grayscale(0);
+  font-size: 4rem;
+
+}
+  
